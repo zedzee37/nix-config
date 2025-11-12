@@ -37,8 +37,6 @@
   services.xserver.enable = true;
 
   # Enable the KDE Plasma Desktop Environment.
-  services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
 
   services.flatpak.enable = true;
 
@@ -76,7 +74,6 @@
     description = "zedzee";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-      kdePackages.kate
     #  thunderbird
     ];
   };
@@ -95,9 +92,7 @@
         git
         neovim
 	gcc
-	inputs.kwin-effects-forceblur.packages.${pkgs.system}.default # Wayland
-	alacritty
-	godot
+	godot-mono
   ];
 
 
