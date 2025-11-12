@@ -97,6 +97,7 @@
 	gcc
 	inputs.kwin-effects-forceblur.packages.${pkgs.system}.default # Wayland
 	alacritty
+	godot
   ];
 
 
