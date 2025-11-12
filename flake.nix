@@ -14,7 +14,7 @@
 		};
 	};
 
-	outputs = { self, nixpkgs, home-manager, plasma-manager, ... }@inputs: 
+	outputs = { self, nixpkgs, home-manager, ... }@inputs: 
 		let 
 		username = "zedzee";
 	system = "x86_64-linux";
