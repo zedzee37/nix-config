@@ -5,11 +5,12 @@
 { config, pkgs, inputs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+	imports =
+		[ # Include the results of the hardware scan.
+			./hardware-configuration.nix
+				../../modules/base/steam.nix
+		];
 
-  networking.hostName = "zedtop"; # Define your hostname.
+	networking.hostName = "zedtop"; # Define your hostname.
 }
 
