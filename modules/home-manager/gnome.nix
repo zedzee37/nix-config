@@ -15,6 +15,7 @@
 		settings = {
 			"org/gnome/desktop/interface" = {
 				color-scheme = "prefer-dark";
+				font = "JetBrainsMono Nerd Font 11";
 			};
 			"org/gnome/desktop/wm/keybindings" = {
 				"switch-to-workspace-1" = [ "<Super>F1" ];
