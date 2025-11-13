@@ -4,6 +4,7 @@
 
 	imports = [ 
 		../../modules/home-manager/gnome.nix
+		../../modules/home-manager/cursor_fix.nix
 	];
 
   # Home Manager needs a bit of information about you and the paths it should
