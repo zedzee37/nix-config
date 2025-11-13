@@ -96,6 +96,7 @@
 			adwaita-icon-theme
 			gnome-tweaks
 			xsettingsd
+			btop
 	];
 
 
