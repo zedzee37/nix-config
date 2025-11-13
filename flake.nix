@@ -8,10 +8,6 @@
 			url = "github:nix-community/home-manager";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
-		kwin-effects-forceblur = {
-			url = "github:taj-ny/kwin-effects-forceblur";
-			inputs.nixpkgs.follows = "nixpkgs";
-		};
 	};
 
 	outputs = { self, nixpkgs, home-manager, ... }@inputs: 
@@ -23,7 +19,8 @@
 		nixosConfigurations.zedtop = nixpkgs.lib.nixosSystem {
 			specialArgs = {inherit inputs;};
 			modules = [
-				./hosts/default/configuration.nix
+				./modules/base/base.nix
+					./hosts/default/configuration.nix
 					home-manager.nixosModules.home-manager
 					{
 						home-manager.extraSpecialArgs = { inherit inputs; };

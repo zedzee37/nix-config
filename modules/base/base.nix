@@ -35,7 +35,6 @@
   # Enable the X11 windowing system.
   # You can disable this if you're only using the Wayland session.
   services.xserver.enable = true;
-
   services.displayManager.gdm.enable = true;
   services.desktopManager.gnome.enable = true;
 
@@ -94,6 +93,8 @@
         neovim
 	gcc
 	godot-mono
+	adwaita-icon-theme
+	gnome-tweaks
   ];
 
 
