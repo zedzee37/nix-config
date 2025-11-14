@@ -97,6 +97,13 @@
 			gnome-tweaks
 			xsettingsd
 			btop
+			rustup
+			cargo
+			lldb
+			python3
+			uv
+			go
+			zig
 	];
 
 
