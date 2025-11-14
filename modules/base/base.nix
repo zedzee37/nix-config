@@ -104,6 +104,8 @@
 			uv
 			go
 			zig
+			rust-analyzer
+			pkg-config
 	];
 
 
