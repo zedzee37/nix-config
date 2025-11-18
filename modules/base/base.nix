@@ -106,6 +106,7 @@
 			zig
 			rust-analyzer
 			pkg-config
+			clang-tools
 	];
 
 
